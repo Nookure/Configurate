@@ -1,16 +1,16 @@
 [versions]
-assertj="3.24.2"
+assertj="3.25.1"
 autoValue="1.10.4"
-checkerQual="3.40.0"
-checkstyle="10.12.5"
+checkerQual="3.42.0"
+checkstyle="10.12.7"
 geantyref = "1.3.14"
-errorprone="2.23.0"
+errorprone="2.24.1"
 indra = "3.1.3"
 junit="5.10.1"
 ktlint="0.49.1"
 ktfmt="0.46"
 pmd = "6.55.0"
-spotless = "6.23.2"
+spotless = "6.23.3"
 
 [libraries]
 # Shared
@@ -19,7 +19,7 @@ autoValue = { module = "com.google.auto.value:auto-value", version.ref = "autoVa
 autoValue-annotations = { module = "com.google.auto.value:auto-value-annotations", version.ref = "autoValue" }
 errorprone = { module = "com.google.errorprone:error_prone_core", version.ref = "errorprone" }
 errorprone-annotations = { module = "com.google.errorprone:error_prone_annotations", version.ref = "errorprone" }
-guava = "com.google.guava:guava:32.1.3-jre"
+guava = "com.google.guava:guava:33.0.0-jre"
 junit-api = { module = "org.junit.jupiter:junit-jupiter-api" }
 junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
 junit-engine = { module = "org.junit.jupiter:junit-jupiter-engine" }
@@ -47,7 +47,7 @@ guice-runtime = "com.google.inject:guice:5.0.1"
 
 # Formats
 gson = "com.google.code.gson:gson:2.8.0" # Fixed version, to avoid using API not present in older MC
-jackson = "com.fasterxml.jackson.core:jackson-core:2.16.0"
+jackson = "com.fasterxml.jackson.core:jackson-core:2.16.1"
 
 # Tool
 clikt = "com.github.ajalt:clikt:2.8.0"
@@ -55,10 +55,10 @@ jansi = "org.fusesource.jansi:jansi:2.4.1"
 
 # Build
 build-codenarc = { module = "org.codenarc:CodeNarc", version = "3.3.0-groovy-4.0" }
-build-codenarcGroovy = { module = "org.apache.groovy:groovy-all", version = "4.0.16" }
+build-codenarcGroovy = { module = "org.apache.groovy:groovy-all", version = "4.0.17" }
 build-errorprone = "net.ltgt.gradle:gradle-errorprone-plugin:3.1.0"
 build-forbiddenApis = "de.thetaphi:forbiddenapis:3.6"
-build-goomph = "com.diffplug.gradle:goomph:3.43.0"
+build-goomph = "com.diffplug.gradle:goomph:3.44.0"
 build-indra = { module = "net.kyori:indra-common", version.ref = "indra" }
 build-indra-crossdoc = { module = "net.kyori:indra-crossdoc", version.ref = "indra" }
 build-japicmp-plugin = "me.champeau.gradle:japicmp-gradle-plugin:0.4.2"
@@ -80,6 +80,6 @@ gitPublish = "org.ajoberstar.git-publish:3.0.1"
 gitpatcher = { id = "ca.stellardrift.gitpatcher", version = "1.1.0" }
 indra-sonatype = { id = "net.kyori.indra.publishing.sonatype", version.ref = "indra" }
 indra-git = { id = "net.kyori.indra.git", version.ref = "indra" }
-kotlin = "org.jetbrains.kotlin.jvm:1.9.21"
+kotlin = "org.jetbrains.kotlin.jvm:1.9.22"
 nexusPublish = { id = "io.github.gradle-nexus.publish-plugin", version = "2.0.0-rc-1" }
 spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
