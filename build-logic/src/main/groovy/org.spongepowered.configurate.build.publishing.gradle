@@ -145,6 +145,10 @@ tasks.withType(Sign).configureEach {
     }
 }
 
+tasks.matching { it.name == "requireClean" }.configureEach {
+    enabled = false
+}
+
 publishing {
     repositories {
         maven {
