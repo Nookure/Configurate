@@ -144,3 +144,18 @@ tasks.withType(Sign).configureEach {
         !project.hasProperty("skipSigning")
     }
 }
+
+publishing {
+    repositories {
+        maven {
+            name = "Reposilite"
+            def isSnapshot = rootProject.version.toString().endsWith("SNAPSHOT")
+            url = uri("https://repo.nookure.com/${isSnapshot ? 'snapshots' : 'releases'}")
+
+            credentials {
+                username = project.findProperty("reposiliteUser")?.toString() ?: System.getenv("REPOSILITE_USER")
+                password = project.findProperty("reposiliteToken")?.toString() ?: System.getenv("REPOSILITE_TOKEN")
+            }
+        }
+    }
+}
